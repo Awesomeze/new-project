@@ -1,35 +1,16 @@
-import { useGSAP } from "@gsap/react";
+import React from 'react'
 import "./App.css"
-import  { useEffect, useRef } from "react";
-
-
-
-
+import Hero from './components/Hero';
 
 
 
 const App = () => {
-
-  
-    
   return (
-    <section  id="hero" className=" flex item-center justify-center pt-10" >
-      <div 
-      className="h-100 w-200"
-      style={{ clipPath: "polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"}}>
-     <img src="/CardBlue.svg" alt="" />
-     <div
-     className="absolute top-10 left 10">
-      spatans
-     </div>
-    </div>
-    
-    
-    </section>
-    
+    <main className='relative min-h-screen w-screen overflow-x-hidden'>
+   <Hero/>
+   </main>
   )
-
- 
-}
+};
 
 export default App
+
