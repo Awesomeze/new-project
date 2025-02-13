@@ -6,42 +6,29 @@ const Hero = () => {
     
 
     const imageRef = useRef<HTMLImageElement>(null)
-   useEffect( () => {
-  if (imageRef.current){
-    gsap.set(imageRef.current,{
-      clipPath:"polygon(7% 0, 88% 0, 100% 100%, 0 100%)",
-  });
-}
-}, []);
-    
     const imageSrc = () => '/Asset.png';
 
-    useGSAP
+    
   return (
    
-   <div className="relative h-dvh w-screen flex justify-center overflow-x-hidden rounded-lg ">
+   <div className="bg-[url('/Frame2.svg')] bg-cover relative h-dvh w-screen flex justify-center overflow-x-hidden  ">
 
-        
-         <div className="flex justify-center z-20 absolute">
-        <img 
-        ref={imageRef}
-        src={imageSrc()}
-        alt="heroImage"
-        className="h-[70%] w-[80%] "
-         />
+       <div className="w-[90%] h-[70%] absolute top-20 bg-black/75 border-2 border-white shadow-xl shadow-blue-700 rounded-xl">
          <h1
-         className=" text-white font-[zentry] absolute top-0 inset-0 text-6xl md:text-7xl lowercase " 
-         > smartX
+         className=" px-3 text-white font-[regular] absolute flex text-6xl md:text-7xl left-0 top-0 " 
+         > smart<span className="font-[regular] text-yellow-300">X</span>
          </h1>
+         <p className="text-yellow-500 flex  absolute top-13 md:pt-3 pt-1 px-4 font-[RegularR] ">
+          making smart Xchanges
+         </p>
          
-         </div>
-         
+         </div> 
          <h1
-         className=" text-black font-[zentry] absolute flex text-6xl md:text-7xl lowercase" 
-         > smartX
+         className="  text-white font-bold  font-[regular] absolute flex text-xl md:text-2xl right-1/14 bottom-[20%] " 
+         >every <span className="font-[regular] text-yellow-300">X</span>change counts
          </h1>
+         </div> 
         
-         </div>
          
   )
 }
