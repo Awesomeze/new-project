@@ -1,7 +1,6 @@
 
 import Xchange from './Xchange';
 import Button from "./Button"
-import Navbar from './Navbar';
 
 const Hero = () => {
 
@@ -9,7 +8,7 @@ const Hero = () => {
   return (
   <div> 
    <div className="bg-[url('/Frame2.svg')] bg-cover relative h-dvh w-screen  flex justify-center overflow-x-hidden  ">
-      <Navbar />
+      
        <div className="w-[90%] h-[70%]  absolute top-20 bg-black/75 border-2 border-white shadow-xl shadow-blue-700 rounded-xl">
          <h1
          className=" px-3 text-white font-[regular] absolute flex text-6xl md:text-7xl left-0 top-0 " 
