@@ -12,11 +12,16 @@ import { useRef, useState } from "react"
 const Navbar = () => {
     const navContainerRef = useRef(null)
     const [hasClicked, sethasClicked] = useState(false)
-   const NavbarList= ["profile", "about",'testimonial',"trade","contact"]
+   const NavList= ["profile", "about",'testimonial',"trade","contact"]
     
   return (
    <div ref={navContainerRef} className="fixed z-30 h-6 absolute items-center top-2 left-0 bg-black/50 justify-center items-center flex font-bold w-screen p-3 transition-all duration-700 ">
     <header className="flex size-full items-center justify-between">
+        {NavList.map((item) =>(
+            <a className="hover:border-1 border-white cursor-pointer px-1 ">
+                {item}
+            </a>
+        ))}
 
     </header>
    
