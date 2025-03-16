@@ -7,7 +7,8 @@ const Hero = () => {
 
   return (
   <div> 
-   <div className="bg-[url('/Frame2.svg')] bg-cover relative h-dvh w-screen  flex justify-center overflow-x-hidden  ">
+   <div 
+       className="bg-[url('/Frame2.svg')] bg-cover relative h-dvh w-screen  flex justify-center overflow-x-hidden" style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%)' }} >
       
        <div className="w-[90%] h-[70%]  absolute top-20 bg-black/75 border-2 border-white shadow-xl shadow-blue-700 rounded-xl">
          <h1
