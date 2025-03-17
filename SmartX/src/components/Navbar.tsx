@@ -1,24 +1,17 @@
-import Profile from "./profile"
-import { useRef, useState } from "react"
 
-<ul className="flex cursor-pointer justify-between w-full rounded-lg bg-black/50 h-6 px-3">
-<li className=" hover:border-1 hover:border-white" ><Profile/></li>
-<li className="hover:border-1 hover:border-white">about</li>
-<li className="hover:border-1 hover:border-white">testimonial</li>
-<li className="hover:border-1 hover:border-white">trade</li>
-<li className="hover:border-1 hover:border-white">contact</li>
-</ul>
 
-const Navbar = () => {
-    const navContainerRef = useRef(null)
-    const [hasClicked, sethasClicked] = useState(false)
-   const NavList= ["profile", "about",'testimonial',"trade","contact"]
+
+const NavList= ['Home', 'About','Testimonial','Trade','Contact']
     
+const Navbar = () => {
+    
+    
+ 
   return (
-   <div ref={navContainerRef} className="fixed z-30 h-6 absolute items-center top-2 left-0 bg-black/50 justify-center items-center flex font-bold w-screen p-3 transition-all duration-700 ">
+   <div  className=" z-30 fixed h-10 absolute items-center top-1 left-0 bg-black/80 justify-center items-center flex font-bold w-screen p-3 transition-all duration-500 ">
     <header className="flex size-full items-center justify-between">
         {NavList.map((item) =>(
-            <a className="hover:border-1 border-white cursor-pointer px-1 ">
+            <a key={item} href={`#${item.toLowerCase()}`} className=" rounded-lg  shadow-blue-200 hover:shadow-lg cursor-pointer px-1 text-white ">
                 {item}
             </a>
         ))}
