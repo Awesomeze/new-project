@@ -22,13 +22,13 @@ const Contact = () => {
            </div>
 
         <div className="flex flex-col items-center rounded-xl h-50 md:h-100 w-100 bg-black text-white/80 text-center"style={{ clipPath: 'polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%)' }}>
-          <h1 className=" border-1 w-60 md:w-90 border-white text-lg md:text-2xl md:mt-5">Send us a review</h1> <Review/>
+          <h1 className="  w-60 md:w-90  text-lg md:text-2xl md:mt-5">Send us a review</h1> <Review/>
           </div>
 
       </div>
 
       <div className="md:px-10 text-center absolute mt-2 md:top-10 md:h-100 w-full relative  ">
-        <h1 className="font-bold font-[regular] text-2xl md:text-7xl md:text-green-500 text-white ">
+        <h1 className="font-bold font-[regular] text-2xl md:text-7xl md:text-green-500 text-green-500 ">
            Happy Trading !
            </h1>
         </div>
