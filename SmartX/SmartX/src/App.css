@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  font-family:'general' ;
+  width: 100vdw;
+}
+
+@font-face {
+  font-family: 'circularWeb';
+src: url('/font/circularweb-book.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'general';
+src: url('/font/general.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'robertM';
+src: url('/font/robert-medium.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'robertR';
+src: url('/font/robert-regular.woff2') format('woff2')
+}
+@font-face {
+  font-family: 'zentry';
+src: url('/font/zentry-regular.woff2') format('woff2')
+}
