@@ -1,11 +1,12 @@
 {
-<<<<<<< HEAD
+HEAD
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.0.5",
     "gsap": "^3.12.7",
     "react-icons": "^5.4.0",
-    "tailwindcss": "^4.0.5"
+    "tailwindcss": "^4.0.5",
+    "@emailjs/browser": "^4.4.1"
   },
 
   "scripts": {
@@ -13,10 +14,17 @@
     "build":"vite build",
     "preview":"vite preview",
     "deploy":"gh-pages -d dist"
-  }
+  },
+
+
+  
 }
 
-=======
+reset
+
+  
+
+
   "name": "smartx",
   "private": true,
   "version": "0.0.0",
@@ -46,4 +54,5 @@
     "vite": "^6.1.0"
   }
 }
->>>>>>> 51538e4 (Initial commit)
+51538e4 (Initial commit)
+ main
