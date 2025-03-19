@@ -28,7 +28,7 @@ const About = () => {
 
         </div>
         </div>
-        <img className="object-cover flex md:h-100 md:w-150 h-70 w-100 rounded-lg" src="/clienthappy.jpg" alt="smiling guy" />
+        <img className="object-cover flex md:h-100 md:w-150 h-70 w-100 rounded-lg" src="./clienthappy.jpg" alt="smiling guy " />
         </div>
         </div>
        
